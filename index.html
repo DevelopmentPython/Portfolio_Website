@@ -122,6 +122,87 @@
     background: var(--global-bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+@media (min-width: 80em) {
+    #main {
+        max-width: 1280px;
+    }
+    .sidebar {
+        max-width: 250px;
+        padding-right: 0;
+    }
+}
+@media (min-width: 57.8125em) {
+    .sidebar {
+        width: 15.2542372881%;
+        float: left;
+        margin-right: 1.6949152542%;
+        opacity: 1;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+    }
+    .sticky {
+        clear: both;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 2em;
+    }
+    .page {
+        width: 83.0508474576%;
+        float: right;
+        margin-right: 0;
+        padding-left: 4.2372881356%;
+        padding-right: 16.9491525424%;
+    }
+    .sticky>* {
+        display: block;
+    }
+    .author__avatar {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .author__avatar img {
+        padding: 5px;
+        border: 1px solid var(--global-border-color);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        height: 100vh;
+        overflow-y: auto;
+        position: fixed;
+        padding-top: 70px;
+    }
+}
+#main {
+    max-width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    animation: intro 0.3s both;
+    animation-delay: 0.35s;
+}
+.sidebar {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    clear: both;
+    margin-bottom: 1em;
+}
+.author__avatar {
+    display: table-cell;
+    vertical-align: top;
+    width: 36px;
+}
+.author__avatar img {
+    max-width: 175px;
+    border-radius: 500%;
+}
+.sidebar img {
+    width: 100%;
+}
 </style>
 
 <div class="masthead">
@@ -152,106 +233,112 @@
     </div>
 </div>
 
-<div>
-<h1 style="text-align: center; font-size: 300%;">Portfolio Website (Draft)</h1>
+<div id="main" role="main">
+    <div class="sidebar sticky" style="padding-top: 65px;">
+        <div itemscope itemtype="https://schema.org/Person">
+            <div class="author__avatar">
+                <img src="Messenger_creation_22AD4AB5-B42C-4C81-BF22-72F5611C1373.jpeg" class="author__avatar" alt="James/Jamie Nguyen" fetchpriority="high">
+            </div>
+        </div>
+    </div>
 
-<ul>
-    <li style="color:#2563eb; font-size: 180%;"> About me </li>
-</ul>
+    <ul>
+        <li style="color:#2563eb; font-size: 180%;"> About me </li>
+    </ul>
 
-<img src="Messenger_creation_22AD4AB5-B42C-4C81-BF22-72F5611C1373.jpeg" width="250" height="340">
+    <img src="Messenger_creation_22AD4AB5-B42C-4C81-BF22-72F5611C1373.jpeg" width="250" height="340">
 
-<p class="custom_style">I'm a student interested in computer science and engineering, with a focus on learning
-how to solve problems through code.</p>
+    <p class="custom_style">I'm a student interested in computer science and engineering, with a focus on learning
+    how to solve problems through code.</p>
 
-<p class="custom_style">After moving to the United States, I had to adjust to a new language and
-environment, which shaped how I approach challenges—with patience, persistence,
-and a willingness to keep improving.</p>
+    <p class="custom_style">After moving to the United States, I had to adjust to a new language and
+    environment, which shaped how I approach challenges—with patience, persistence,
+    and a willingness to keep improving.</p>
 
-<p class="custom_style">I enjoy building small projects, including games like Snake and Tic-Tac-Toe, as well as
-programs that solve math and algorithmic problems. Through these, I've developed a
-strong foundation in programming and logical thinking.</p>
+    <p class="custom_style">I enjoy building small projects, including games like Snake and Tic-Tac-Toe, as well as
+    programs that solve math and algorithmic problems. Through these, I've developed a
+    strong foundation in programming and logical thinking.</p>
 
-<p class="custom_style">I'm especially interested in continuing to grow my skills and eventually using technology
-and engineering to build tools that are practical and meaningful.</p> 
-<br>
+    <p class="custom_style">I'm especially interested in continuing to grow my skills and eventually using technology
+    and engineering to build tools that are practical and meaningful.</p> 
+    <br>
 
-<ul>
-    <li style="color:#2563eb; font-size: 180%;"> Resume </li>
-</ul>
+    <ul>
+        <li style="color:#2563eb; font-size: 180%;"> Resume </li>
+    </ul>
 
-<img src="20260228_134356.jpg" width="600" height="340"> 
+    <img src="20260228_134356.jpg" width="600" height="340"> 
 
-<h2 style="text-align: center; font-size: 230%;"> James/Jamie Nguyen </h2>
+    <h2 style="text-align: center; font-size: 230%;"> James/Jamie Nguyen </h2>
 
-<p style="text-align: center; font-size: 180%">Shoreline, WA | mtnguyen010921@gmail.com</p> 
-<br>
+    <p style="text-align: center; font-size: 180%">Shoreline, WA | mtnguyen010921@gmail.com</p> 
+    <br>
 
-<h2 class="custom_header"> Education </h2>
+    <h2 class="custom_header"> Education </h2>
 
-<ul>
-    <li class="custom_style"> Shorecrest Highschool — Shoreline, WA </li>
-    <li class="custom_style"> Expected Graduation: 2026 </li>
-    <li class="custom_style"> GPA: 3.6-3.7 </li>
-    <li class="custom_style"> Coursework: AP Computer Science, AP Calculus, AP Physics (10 APs total) </li>
-</ul> 
-<br>
+    <ul>
+        <li class="custom_style"> Shorecrest Highschool — Shoreline, WA </li>
+        <li class="custom_style"> Expected Graduation: 2026 </li>
+        <li class="custom_style"> GPA: 3.6-3.7 </li>
+        <li class="custom_style"> Coursework: AP Computer Science, AP Calculus, AP Physics (10 APs total) </li>
+    </ul> 
+    <br>
 
-<h2 class="custom_header"> Project </h2>
+    <h2 class="custom_header"> Project </h2>
 
-<div class="project_section">
-<p class="custom_Pr"> Calculator (Python) </p>
+    <div class="project_section">
+    <p class="custom_Pr"> Calculator (Python) </p>
 
-<ul>
-    <li class="custom_style"> Developed a calculator application in Python capable of performing basic arithmetic operations, including addition, subtraction, multiplication, and division </li>
-    <li class="custom_style"> Implemented user input handling and error checking to ensure accurate calculations and a smooth user experience </li>
-</ul>
-</div>
-<br>
+    <ul>
+        <li class="custom_style"> Developed a calculator application in Python capable of performing basic arithmetic operations, including addition, subtraction, multiplication, and division </li>
+        <li class="custom_style"> Implemented user input handling and error checking to ensure accurate calculations and a smooth user experience </li>
+    </ul>
+    </div>
+    <br>
 
-<div class="project_section">
-<p class="custom_Pr"> Tic-Tac-Toe (C++) </p>
+    <div class="project_section">
+    <p class="custom_Pr"> Tic-Tac-Toe (C++) </p>
 
-<ul>
-    <li class="custom_style"> Developed a console-based Tic-Tac-Toe game supporting two-player turn-based gameplay </li>
-    <li class="custom_style"> Implemented game board management, move validation, and automated win/draw detection </li>
-    <li class="custom_style"> Utilized C++ functions, arrays, and control structures to create efficient and maintainable game logic </li>
-</ul>
-</div>
-<br>
+    <ul>
+        <li class="custom_style"> Developed a console-based Tic-Tac-Toe game supporting two-player turn-based gameplay </li>
+        <li class="custom_style"> Implemented game board management, move validation, and automated win/draw detection </li>
+        <li class="custom_style"> Utilized C++ functions, arrays, and control structures to create efficient and maintainable game logic </li>
+    </ul>
+    </div>
+    <br>
 
-<div class="project_section">
-<p class="custom_Pr"> Chess (python) </p>
+    <div class="project_section">
+    <p class="custom_Pr"> Chess (python) </p>
 
-<ul>
-    <li class="custom_style"> Built an interactive chess game using Python and tkinter </li>
-    <li class="custom_style"> Implemented core game mechanics, including legal move generation, check/checkmate detection, castling, and pawn promotion </li>
-    <li class="custom_style"> Applied game's logics and principles, similiar to the original chess game </li>
-    <li class="custom_style"> Applied the display of the status of the game and the players </li>
-</ul>
-</div>
-<br>
+    <ul>
+        <li class="custom_style"> Built an interactive chess game using Python and tkinter </li>
+        <li class="custom_style"> Implemented core game mechanics, including legal move generation, check/checkmate detection, castling, and pawn promotion </li>
+        <li class="custom_style"> Applied game's logics and principles, similiar to the original chess game </li>
+        <li class="custom_style"> Applied the display of the status of the game and the players </li>
+    </ul>
+    </div>
+    <br>
 
-<h2 class="custom_header"> Experience </h2>
+    <h2 class="custom_header"> Experience </h2>
 
-<p class="custom_Pr"> Guardian Pharmacy — Part-time Employee </p>
+    <p class="custom_Pr"> Guardian Pharmacy — Part-time Employee </p>
 
-<ul>
-    <li class="custom_style"> Developed responsibility, communication, and teamwork skills </li>
-    <li class="custom_style"> Managed tasks efficiently in a fast-paced environment </li> 
-</ul> 
-<br>\
+    <ul>
+        <li class="custom_style"> Developed responsibility, communication, and teamwork skills </li>
+        <li class="custom_style"> Managed tasks efficiently in a fast-paced environment </li> 
+    </ul> 
+    <br>\
 
-<h2 class="custom_header"> Skills </h2>
+    <h2 class="custom_header"> Skills </h2>
 
-<ul>
-    <li class="custom_style"> Coding Languages: Python, Java, C++ </li>
-    <li class="custom_style"> Tools: Git VS Code </li>
-    <li class="custom_style"> Interests: Software development, problem-solving, user-focused design, Engineering (any kind) </li>
-</ul> 
-<br>
+    <ul>
+        <li class="custom_style"> Coding Languages: Python, Java, C++ </li>
+        <li class="custom_style"> Tools: Git VS Code </li>
+        <li class="custom_style"> Interests: Software development, problem-solving, user-focused design, Engineering (any kind) </li>
+    </ul> 
+    <br>
 
-<img src="Messenger_creation_AA5C697F-62D3-4023-ACB1-4F78F95899AC.jpeg" width="600" height="430"> 
+    <img src="Messenger_creation_AA5C697F-62D3-4023-ACB1-4F78F95899AC.jpeg" width="600" height="430"> 
 </div>
 
 <div>
